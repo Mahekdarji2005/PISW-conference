@@ -1,0 +1,292 @@
+/* Themes Page Specific Styles */
+
+/* Themes Hero */
+.themes-hero {
+    background: linear-gradient(135deg, #f4fbf9 0%, #e0f2f1 100%);
+    padding: 40px 0 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.themes-hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.themes-hero-content {
+    flex: 1;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.themes-hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    background-color: white;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.themes-hero-illustration {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.themes-hero-img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+}
+
+.themes-hero-badge {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    font-family: 'Outfit', cursive;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transform: rotate(-10deg);
+}
+
+/* Key Focus Areas */
+.key-focus {
+    padding: 80px 0;
+}
+
+.themes-section-header {
+    margin-bottom: 50px;
+}
+
+.focus-label {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.focus-title {
+    margin-bottom: 16px;
+}
+
+.focus-desc {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Detailed Themes Grid */
+.detailed-themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.detailed-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailed-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.card-num {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    flex-grow: 1;
+    margin-bottom: 24px;
+}
+
+.card-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.detailed-card:hover .card-arrow {
+    transform: translateX(3px);
+}
+
+/* Card Specific Colors */
+.card-teal { border-top: 4px solid #00897b; }
+.card-orange { border-top: 4px solid #fb8c00; }
+.card-blue { border-top: 4px solid #1e88e5; }
+.card-purple { border-top: 4px solid #8e24aa; }
+.card-green { border-top: 4px solid #43a047; }
+.card-peach { border-top: 4px solid #f4511e; }
+.card-blue-pale { border-top: 4px solid #039be5; }
+.card-purple-pale { border-top: 4px solid #5e35b1; }
+.card-pink { border-top: 4px solid #d81b60; }
+.card-cyan { border-top: 4px solid #00acc1; }
+.card-yellow { border-top: 4px solid #fdd835; }
+.card-green-pale { border-top: 4px solid #7cb342; }
+.card-blue-gray { border-top: 4px solid #546e7a; }
+.card-orange-pale { border-top: 4px solid #ffb300; }
+.card-pink-pale { border-top: 4px solid #f06292; }
+
+/* The bg colors are already defined in styles.css as --theme-*, but we need to apply them as classes for background if not already there */
+/* Actually, let's reuse the bg-* classes or define new ones for arrow and icon bg */
+
+/* CTA Section */
+.cta-section {
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+.cta-container {
+    background-color: var(--theme-teal);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-content {
+    flex: 1;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.cta-label {
+    color: var(--primary-hover);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.cta-text {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+.cta-image-wrapper {
+    flex: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-image: url('assets/about_hands.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 24px 24px 0;
+    mask-image: linear-gradient(to right, transparent, black 30%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 30%);
+}
+
+.cta-badge {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    background-color: #fff9c4;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-family: 'Outfit', cursive;
+    color: var(--primary-color);
+    font-weight: 600;
+    transform: rotate(-5deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .themes-hero-container, .cta-container {
+        flex-direction: column;
+    }
+    
+    .cta-image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border-radius: 24px;
+        margin-top: 24px;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+    
+    .cta-badge {
+        bottom: 20px;
+        right: 20px;
+    }
+}
