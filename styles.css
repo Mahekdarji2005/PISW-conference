@@ -724,6 +724,23 @@ a {
     border: 3px solid var(--white);
 }
 
+.crop-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--white);
+    background-color: var(--white);
+}
+
+.committee-img.cropped {
+    border: none;
+    transform: scale(1.15); /* Scale up to hide the yellow border that is burned into the image */
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
 /* Footer Section */
 .footer {
     background-color: #eef2f5; /* Slightly darker light background */
