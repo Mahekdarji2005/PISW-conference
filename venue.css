@@ -14,7 +14,7 @@
     font-family: 'Outfit', sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    color: var(--primary-color, #0d8b88);
+    color: var(--primary-color, #e06d53);
     margin-bottom: 10px;
 }
 
@@ -60,7 +60,7 @@
 
 .venue-thumb:hover {
     transform: scale(1.05);
-    border-color: var(--primary-color, #0d8b88);
+    border-color: var(--primary-color, #e06d53);
 }
 
 /* Right Side */
@@ -127,9 +127,9 @@
 }
 
 .btn-transport:hover {
-    background-color: var(--primary-color, #0d8b88);
+    background-color: var(--primary-color, #e06d53);
     color: white;
-    border-color: var(--primary-color, #0d8b88);
+    border-color: var(--primary-color, #e06d53);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(13, 139, 136, 0.2);
 }
