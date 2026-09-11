@@ -824,6 +824,7 @@ a {
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 0.95rem;
+    font-weight: bold;
 }
 
 .footer-links a:hover {
@@ -843,6 +844,7 @@ a {
     color: rgba(255,255,255,0.85);
     font-size: 0.95rem;
     line-height: 1.5;
+    font-weight: bold;
 }
 
 .footer-contact li svg {
@@ -899,6 +901,7 @@ a {
     color: rgba(255,255,255,0.85);
     font-size: 0.9rem;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .subscribe-form {
@@ -944,6 +947,7 @@ a {
     border-top: 1px solid rgba(255,255,255,0.2);
     color: rgba(255,255,255,0.7);
     font-size: 0.85rem;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
