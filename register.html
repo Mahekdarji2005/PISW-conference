@@ -4,19 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDGs - Reimagining Social Work</title>
+    <title>Registration - International Conference</title>
     <meta name="description"
         content="Advancing Inclusion, Equality, Education and Social Justice for a Sustainable Future. Parul University, Vadodara.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .reg-page-wrapper {
+            background-color: #eafaf1; /* Light green instead of white/gray */
+            padding: 80px 0 120px;
+            font-family: 'Inter', sans-serif;
+            min-height: calc(100vh - 80px);
+        }
+        .reg-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .reg-title {
+            font-size: 2.2rem;
+            color: var(--text-dark, #1f2937);
+            margin: 0;
+            font-weight: 800; /* Bolder */
+        }
+        .reg-alert {
+            display: flex;
+            align-items: center;
+            border: 2px solid var(--primary-color, #0e8880);
+            background-color: #ffffff;
+            color: var(--primary-color, #0e8880);
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 700; /* Bolder */
+        }
+        .reg-table-container {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow-x: auto;
+            box-shadow: 0 10px 30px rgba(14, 136, 128, 0.1); /* Greenish shadow */
+            border: 2px solid #bbf7d0; /* Light green border */
+        }
+        .reg-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 900px;
+            text-align: center;
+            font-size: 1rem; /* Slightly larger */
+            color: #1f2937;
+            font-weight: 600; /* Bolder font overall */
+        }
+        .reg-table th, .reg-table td {
+            border: 1px solid #bbf7d0; /* Light green border */
+            padding: 22px;
+        }
+        .reg-table th {
+            font-weight: 800; /* Bolder */
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #064e3b;
+            background-color: #d1fae5; /* Light green header */
+        }
+        .btn-active {
+            display: block;
+            background: var(--primary-color, #0e8880);
+            color: #ffffff;
+            padding: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(14, 136, 128, 0.2);
+            position: relative;
+        }
+        .btn-active:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(14, 136, 128, 0.3);
+        }
+        .btn-active .price {
+            transition: opacity 0.2s ease;
+        }
+        .btn-active:hover .price {
+            opacity: 0;
+        }
+        .btn-active::after {
+            content: "Pay Now \2192";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            white-space: nowrap;
+        }
+        .btn-active:hover::after {
+            opacity: 1;
+        }
+        .btn-disabled {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: #f3f4f6;
+            color: #9ca3af;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            border: 1px solid #e5e7eb;
+        }
+        .spot-highlight {
+            color: #d97706 !important;
+        }
+    </style>
 </head>
 
 <body>
-
     <!-- Header / Navbar -->
     <header class="header">
         <div class="container header-container">
@@ -47,37 +155,67 @@
                     <a href="venue.html" class="nav-link">Venue</a>
                     <a href="index.html#contact" class="nav-link">Contact</a>
                 </nav>
-                <a href="register.html" class="btn btn-primary">Register Now &rarr;</a>
+                <a href="register.html" class="btn btn-primary active">Register Now &rarr;</a>
             </div>
         </div>
     </header>
 
-        <!-- SDGs Section -->
-    <section class="sdgs" id="sdgs" style="padding-top: 120px; min-height: 100vh;">
+    <div class="reg-page-wrapper">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Associated SDGs</h2>
-                <p style="color: var(--text-muted); max-width: 600px; margin: 16px auto 0;">The conference aligns with the following United Nations Sustainable Development Goals to build a more inclusive, equitable and sustainable future.</p>
+            <div class="reg-header">
+                <h2 class="reg-title">Registration Fee Structure</h2>
+                <div class="reg-alert">
+                    <span style="margin-right: 10px; font-size: 1.2rem;">ⓘ</span> Please click on the respective fee amount below to proceed to the payment portal.
+                </div>
             </div>
-            <div class="sdgs-grid">
-                <a href="https://sdgs.un.org/goals/1" target="_blank" class="sdg-item">
-                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-01.jpg" alt="Goal 1: No Poverty">
-                </a>
-                <a href="https://sdgs.un.org/goals/3" target="_blank" class="sdg-item">
-                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-03.jpg" alt="Goal 3: Good Health and Well-being">
-                </a>
-                <a href="https://sdgs.un.org/goals/4" target="_blank" class="sdg-item">
-                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-04.jpg" alt="Goal 4: Quality Education">
-                </a>
-                <a href="https://sdgs.un.org/goals/5" target="_blank" class="sdg-item">
-                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-05.jpg" alt="Goal 5: Gender Equality">
-                </a>
-                <a href="https://sdgs.un.org/goals/10" target="_blank" class="sdg-item">
-                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-10.jpg" alt="Goal 10: Reduced Inequalities">
-                </a>
+            
+            <div class="reg-table-container">
+                <table class="reg-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%; text-align: left; padding-left: 30px;">CATEGORY</th>
+                            <th>EARLY BIRD</th>
+                            <th style="color: #6b7280;">LATE BIRD <span style="font-size:0.9rem;">🔒</span></th>
+                            <th class="spot-highlight" style="border-right: none;">ON-THE-SPOT REGISTRATION <span style="font-size:0.9rem;">🔒</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Faculty</td>
+                            <td><a href="#" class="btn-active"><span class="price">₹800</span></a></td>
+                            <td><div class="btn-disabled">₹1,000 🔒</div></td>
+                            <td><div class="btn-disabled">₹1,200 🔒</div></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Research Scholars</td>
+                            <td><a href="#" class="btn-active"><span class="price">₹500</span></a></td>
+                            <td><div class="btn-disabled">₹700 🔒</div></td>
+                            <td><div class="btn-disabled">₹800 🔒</div></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Students</td>
+                            <td><a href="#" class="btn-active"><span class="price">₹500</span></a></td>
+                            <td><div class="btn-disabled">₹700 🔒</div></td>
+                            <td><div class="btn-disabled">₹800 🔒</div></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Foreign Participants</td>
+                            <td><a href="#" class="btn-active"><span class="price">USD 10</span></a></td>
+                            <td><div class="btn-disabled">USD 15 🔒</div></td>
+                            <td><div class="btn-disabled">USD 20 🔒</div></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Others</td>
+                            <td><a href="#" class="btn-active"><span class="price">₹400</span></a></td>
+                            <td><div class="btn-disabled">₹500 🔒</div></td>
+                            <td><div class="btn-disabled">₹600 🔒</div></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </section>
+    </div>
+
     <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
@@ -164,15 +302,24 @@
                     </form>
                 </div>
             </div>
-                        <div class="footer-bottom" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: rgba(255,255,255,0.8); gap: 15px;">
+            <div class="footer-bottom"
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: rgba(255,255,255,0.8); gap: 15px;">
                 <div class="footer-copyright">
                     &copy; 2026-27 PISW International Conference. All rights reserved.
                 </div>
                 <div class="footer-credits" style="display: flex; align-items: center; gap: 5px;">
-                    Designed &amp; Developed by: 
-                    <a href="https://www.linkedin.com/in/mahek-darji-521651303/" target="_blank" style="color: #fff; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 5px;">
+                    Designed &amp; Developed by:
+                    <a href="https://www.linkedin.com/in/mahek-darji-521651303/" target="_blank"
+                        style="color: #fff; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 5px;">
                         Mahek Darji
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect width="4" height="12" x="2" y="9"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
                     </a>
                 </div>
                 <div class="footer-policies" style="display: flex; gap: 15px;">
