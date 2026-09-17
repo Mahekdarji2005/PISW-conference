@@ -9,15 +9,19 @@
         content="Advancing Inclusion, Equality, Education and Social Justice for a Sustainable Future. Parul University, Vadodara.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         .reg-page-wrapper {
-            background-color: #eafaf1; /* Light green instead of white/gray */
+            background-color: #eafaf1;
+            /* Light green instead of white/gray */
             padding: 80px 0 120px;
             font-family: 'Inter', sans-serif;
             min-height: calc(100vh - 80px);
         }
+
         .reg-header {
             display: flex;
             flex-direction: column;
@@ -27,12 +31,15 @@
             margin-bottom: 50px;
             text-align: center;
         }
+
         .reg-title {
             font-size: 2.2rem;
             color: var(--text-dark, #1f2937);
             margin: 0;
-            font-weight: 800; /* Bolder */
+            font-weight: 800;
+            /* Bolder */
         }
+
         .reg-alert {
             display: flex;
             align-items: center;
@@ -42,35 +49,49 @@
             padding: 12px 25px;
             border-radius: 30px;
             font-size: 0.95rem;
-            font-weight: 700; /* Bolder */
+            font-weight: 700;
+            /* Bolder */
         }
+
         .reg-table-container {
             background: #ffffff;
             border-radius: 12px;
             overflow-x: auto;
-            box-shadow: 0 10px 30px rgba(14, 136, 128, 0.1); /* Greenish shadow */
-            border: 2px solid #bbf7d0; /* Light green border */
+            box-shadow: 0 10px 30px rgba(14, 136, 128, 0.1);
+            /* Greenish shadow */
+            border: 2px solid #bbf7d0;
+            /* Light green border */
         }
+
         .reg-table {
             width: 100%;
             border-collapse: collapse;
             min-width: 900px;
             text-align: center;
-            font-size: 1rem; /* Slightly larger */
+            font-size: 1rem;
+            /* Slightly larger */
             color: #1f2937;
-            font-weight: 600; /* Bolder font overall */
+            font-weight: 600;
+            /* Bolder font overall */
         }
-        .reg-table th, .reg-table td {
-            border: 1px solid #bbf7d0; /* Light green border */
+
+        .reg-table th,
+        .reg-table td {
+            border: 1px solid #bbf7d0;
+            /* Light green border */
             padding: 22px;
         }
+
         .reg-table th {
-            font-weight: 800; /* Bolder */
+            font-weight: 800;
+            /* Bolder */
             text-transform: uppercase;
             letter-spacing: 0.5px;
             color: #064e3b;
-            background-color: #d1fae5; /* Light green header */
+            background-color: #d1fae5;
+            /* Light green header */
         }
+
         .btn-active {
             display: block;
             background: var(--primary-color, #0e8880);
@@ -83,16 +104,20 @@
             box-shadow: 0 4px 6px rgba(14, 136, 128, 0.2);
             position: relative;
         }
+
         .btn-active:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(14, 136, 128, 0.3);
         }
+
         .btn-active .price {
             transition: opacity 0.2s ease;
         }
+
         .btn-active:hover .price {
             opacity: 0;
         }
+
         .btn-active::after {
             content: "Pay Now \2192";
             position: absolute;
@@ -103,9 +128,11 @@
             transition: opacity 0.2s ease;
             white-space: nowrap;
         }
+
         .btn-active:hover::after {
             opacity: 1;
         }
+
         .btn-disabled {
             display: flex;
             align-items: center;
@@ -118,6 +145,7 @@
             font-weight: 600;
             border: 1px solid #e5e7eb;
         }
+
         .spot-highlight {
             color: #d97706 !important;
         }
@@ -165,10 +193,11 @@
             <div class="reg-header">
                 <h2 class="reg-title">Registration Fee Structure</h2>
                 <div class="reg-alert">
-                    <span style="margin-right: 10px; font-size: 1.2rem;">ⓘ</span> Please click on the respective fee amount below to proceed to the payment portal.
+                    <span style="margin-right: 10px; font-size: 1.2rem;">ⓘ</span> Please click on the respective fee
+                    amount below to proceed to the payment portal.
                 </div>
             </div>
-            
+
             <div class="reg-table-container">
                 <table class="reg-table">
                     <thead>
@@ -176,39 +205,65 @@
                             <th style="width: 25%; text-align: left; padding-left: 30px;">CATEGORY</th>
                             <th>EARLY BIRD</th>
                             <th style="color: #6b7280;">LATE BIRD <span style="font-size:0.9rem;">🔒</span></th>
-                            <th class="spot-highlight" style="border-right: none;">ON-THE-SPOT REGISTRATION <span style="font-size:0.9rem;">🔒</span></th>
+                            <th class="spot-highlight" style="border-right: none;">ON-THE-SPOT REGISTRATION <span
+                                    style="font-size:0.9rem;">🔒</span></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Faculty</td>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Faculty
+                            </td>
                             <td><a href="#" class="btn-active"><span class="price">₹800</span></a></td>
-                            <td><div class="btn-disabled">₹1,000 🔒</div></td>
-                            <td><div class="btn-disabled">₹1,200 🔒</div></td>
+                            <td>
+                                <div class="btn-disabled">₹1,000 🔒</div>
+                            </td>
+                            <td>
+                                <div class="btn-disabled">₹1,200 🔒</div>
+                            </td>
                         </tr>
                         <tr>
-                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Research Scholars</td>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Research
+                                Scholars</td>
                             <td><a href="#" class="btn-active"><span class="price">₹500</span></a></td>
-                            <td><div class="btn-disabled">₹700 🔒</div></td>
-                            <td><div class="btn-disabled">₹800 🔒</div></td>
+                            <td>
+                                <div class="btn-disabled">₹700 🔒</div>
+                            </td>
+                            <td>
+                                <div class="btn-disabled">₹800 🔒</div>
+                            </td>
                         </tr>
                         <tr>
-                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Students</td>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Students
+                            </td>
                             <td><a href="#" class="btn-active"><span class="price">₹500</span></a></td>
-                            <td><div class="btn-disabled">₹700 🔒</div></td>
-                            <td><div class="btn-disabled">₹800 🔒</div></td>
+                            <td>
+                                <div class="btn-disabled">₹700 🔒</div>
+                            </td>
+                            <td>
+                                <div class="btn-disabled">₹800 🔒</div>
+                            </td>
                         </tr>
                         <tr>
-                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Foreign Participants</td>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Foreign
+                                Participants</td>
                             <td><a href="#" class="btn-active"><span class="price">USD 10</span></a></td>
-                            <td><div class="btn-disabled">USD 15 🔒</div></td>
-                            <td><div class="btn-disabled">USD 20 🔒</div></td>
+                            <td>
+                                <div class="btn-disabled">USD 15 🔒</div>
+                            </td>
+                            <td>
+                                <div class="btn-disabled">USD 20 🔒</div>
+                            </td>
                         </tr>
                         <tr>
-                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Others</td>
+                            <td style="text-align: left; padding-left: 30px; font-weight: 700; color: #1f2937;">Others
+                            </td>
                             <td><a href="#" class="btn-active"><span class="price">₹400</span></a></td>
-                            <td><div class="btn-disabled">₹500 🔒</div></td>
-                            <td><div class="btn-disabled">₹600 🔒</div></td>
+                            <td>
+                                <div class="btn-disabled">₹500 🔒</div>
+                            </td>
+                            <td>
+                                <div class="btn-disabled">₹600 🔒</div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
